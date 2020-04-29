@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xenianick/ahj-homework_8.2.git"
+    "url": "git+https://github.com/xenianick/ahj-homework_8.3.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
