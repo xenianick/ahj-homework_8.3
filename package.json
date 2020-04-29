@@ -1,0 +1,56 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "author": "Ksenia",
+  "license": "ISC",
+  "private": false,
+  "scripts": {
+    "start": "forever src/js/__server/server.js",
+    "watch": "forever -w src/js/__server/server.js",
+    "webpack": "webpack-dev-server --mode development",
+    "build": "webpack",
+    "babel": "babel src -d dist",
+    "lint": "eslint .",
+    "test": "jest --testPathPattern=./unit/",
+    "coverage": "jest --testPathPattern=./unit/ --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenianick/ahj-homework_8.2.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.2.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.0.4",
+    "jest": "^25.2.7",
+    "mini-css-extract-plugin": "^0.9.0",
+    "puppeteer": "^2.1.1",
+    "push-dir": "^0.4.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "forever": "^2.0.0",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "uuid": "^7.0.3",
+    "ws": "^7.2.3",
+    "yarn": "^1.22.4"
+  }
+}
